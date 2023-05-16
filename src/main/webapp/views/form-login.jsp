@@ -26,7 +26,7 @@
             <td colspan="2"><button type="submit">Login</button></td>
         </tr>
     </table>
-    <p>${login}</p>
+    <a href="/userController/form-register">Đăng ký</a>
 </form>
 </body>
 </html>

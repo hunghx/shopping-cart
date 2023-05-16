@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import ra.model.entity.User;
+import ra.model.entity.UserLogin;
 import ra.model.service.user.IUserService;
 import ra.model.service.user.UserServiceImp;
 
@@ -35,18 +36,18 @@ public class UserController {
             model.addAttribute("login","Not Required");
             return "form-login";
         }
-        User user = userService.login(new User(username, password));
+        UserLogin user = userService.login(new User(username, password));
         if (user == null){
             model.addAttribute("login","Username or password incorrect");
             return "form-login";
         }else {
-           request.getSession().setAttribute("userlogin",user);
+           request.getSession().setAttribute("userLogin",user);
            if (user.getRole()==1){
                // đây là admin
                return "admin";
            }else if (user.getRole()==0) {
                // đây là người dùng
-               return "home";
+               return "redirect:/";
            }else {
                return "home";
            }

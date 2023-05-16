@@ -1144,50 +1144,50 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <Current>1</Current>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
-    <schema id="325" parent="1" name="demoquanly">
+    <schema id="325" parent="1" name="demologin">
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
-    <schema id="326" parent="1" name="information_schema">
-      <CollationName>utf8_general_ci</CollationName>
-    </schema>
-    <schema id="327" parent="1" name="mysql">
+    <schema id="326" parent="1" name="demoquanly">
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
-    <schema id="328" parent="1" name="performance_schema">
+    <schema id="327" parent="1" name="information_schema">
       <CollationName>utf8_general_ci</CollationName>
     </schema>
-    <schema id="329" parent="1" name="phpmyadmin">
+    <schema id="328" parent="1" name="mysql">
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </schema>
+    <schema id="329" parent="1" name="performance_schema">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="330" parent="1" name="phpmyadmin">
       <CollationName>utf8_bin</CollationName>
     </schema>
-    <schema id="330" parent="1" name="projectfinal">
+    <schema id="331" parent="1" name="projectfinal">
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
-    <schema id="331" parent="1" name="qlbh">
+    <schema id="332" parent="1" name="qlbh">
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
-    <schema id="332" parent="1" name="qlsv">
+    <schema id="333" parent="1" name="qlsv">
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
-    <schema id="333" parent="1" name="quanlybanhang">
+    <schema id="334" parent="1" name="quanlybanhang">
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
-    <schema id="334" parent="1" name="quanlybanhang_demo">
+    <schema id="335" parent="1" name="quanlybanhang_demo">
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
-    <schema id="335" parent="1" name="quanlydiemsv">
+    <schema id="336" parent="1" name="quanlydiemsv">
       <CollationName>utf8mb4_vietnamese_ci</CollationName>
     </schema>
-    <schema id="336" parent="1" name="quanlydiemthi">
+    <schema id="337" parent="1" name="quanlydiemthi">
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
-    <schema id="337" parent="1" name="quanlysinhvien">
+    <schema id="338" parent="1" name="quanlysinhvien">
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
-    <schema id="338" parent="1" name="test">
+    <schema id="339" parent="1" name="test">
       <CollationName>latin1_swedish_ci</CollationName>
-    </schema>
-    <schema id="339" parent="1" name="demologin">
-      <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <user id="340" parent="1" name="pma">
       <Host>localhost</Host>
@@ -1201,271 +1201,511 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
     <user id="343" parent="1" name="root">
       <Host>localhost</Host>
     </user>
-    <routine id="344" parent="332" name="PROC_CREATESTUDENT">
+    <routine id="344" parent="325" name="PROC_FINDBYUSERNAME">
+      <Definer>root@localhost</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>62</SourceTextLength>
+    </routine>
+    <routine id="345" parent="325" name="PROC_LOGIN">
+      <Definer>root@localhost</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>85</SourceTextLength>
+    </routine>
+    <routine id="346" parent="325" name="PROC_REGISTER">
+      <Definer>root@localhost</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>73</SourceTextLength>
+    </routine>
+    <table id="347" parent="325" name="accounts">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <routine id="348" parent="333" name="PROC_CREATESTUDENT">
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
       <SourceTextLength>103</SourceTextLength>
     </routine>
-    <routine id="345" parent="332" name="PROC_DELETESTUDENT">
+    <routine id="349" parent="333" name="PROC_ChangeQuantity">
+      <Definer>root@localhost</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>71</SourceTextLength>
+    </routine>
+    <routine id="350" parent="333" name="PROC_ClearCartDetail">
+      <Definer>root@localhost</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>64</SourceTextLength>
+    </routine>
+    <routine id="351" parent="333" name="PROC_CreateNewOrder">
+      <Definer>root@localhost</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>101</SourceTextLength>
+    </routine>
+    <routine id="352" parent="333" name="PROC_CreateOrderDetail">
+      <Definer>root@localhost</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>149</SourceTextLength>
+    </routine>
+    <routine id="353" parent="333" name="PROC_DELETESTUDENT">
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
       <SourceTextLength>53</SourceTextLength>
     </routine>
-    <routine id="346" parent="332" name="PROC_FINDBYID">
+    <routine id="354" parent="333" name="PROC_DeleteOrderDetail">
+      <Definer>root@localhost</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>64</SourceTextLength>
+    </routine>
+    <routine id="355" parent="333" name="PROC_FINDBYID">
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
       <SourceTextLength>56</SourceTextLength>
     </routine>
-    <routine id="347" parent="332" name="PROC_FINDBYUSERNAME">
+    <routine id="356" parent="333" name="PROC_FINDBYUSERNAME">
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
       <SourceTextLength>62</SourceTextLength>
     </routine>
-    <routine id="348" parent="332" name="PROC_GETALL">
+    <routine id="357" parent="333" name="PROC_FindAllProduct">
+      <Definer>root@localhost</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>37</SourceTextLength>
+    </routine>
+    <routine id="358" parent="333" name="PROC_FindListOrderDetail">
+      <Definer>root@localhost</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>144</SourceTextLength>
+    </routine>
+    <routine id="359" parent="333" name="PROC_FindProductById">
+      <Definer>root@localhost</Definer>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>60</SourceTextLength>
+    </routine>
+    <routine id="360" parent="333" name="PROC_GETALL">
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
       <SourceTextLength>36</SourceTextLength>
     </routine>
-    <routine id="349" parent="332" name="PROC_LOGIN">
+    <routine id="361" parent="333" name="PROC_LOGIN">
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
-      <SourceTextLength>85</SourceTextLength>
+      <SourceTextLength>154</SourceTextLength>
     </routine>
-    <routine id="350" parent="332" name="PROC_REGISTER">
+    <routine id="362" parent="333" name="PROC_REGISTER">
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
-      <SourceTextLength>73</SourceTextLength>
+      <SourceTextLength>231</SourceTextLength>
     </routine>
-    <routine id="351" parent="332" name="PROC_SEARCHBYNAME">
+    <routine id="363" parent="333" name="PROC_SEARCHBYNAME">
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
       <SourceTextLength>79</SourceTextLength>
     </routine>
-    <routine id="352" parent="332" name="PROC_UPDATESTUDENT">
+    <routine id="364" parent="333" name="PROC_UPDATESTUDENT">
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
       <SourceTextLength>102</SourceTextLength>
     </routine>
-    <table id="353" parent="332" name="accounts">
+    <table id="365" parent="333" name="accounts">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="354" parent="332" name="student">
+    <table id="366" parent="333" name="orderdetail">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <routine id="355" parent="339" name="PROC_FINDBYUSERNAME">
-      <Definer>root@localhost</Definer>
-      <RoutineKind>procedure</RoutineKind>
-      <SourceTextLength>62</SourceTextLength>
-    </routine>
-    <routine id="356" parent="339" name="PROC_LOGIN">
-      <Definer>root@localhost</Definer>
-      <RoutineKind>procedure</RoutineKind>
-      <SourceTextLength>85</SourceTextLength>
-    </routine>
-    <routine id="357" parent="339" name="PROC_REGISTER">
-      <Definer>root@localhost</Definer>
-      <RoutineKind>procedure</RoutineKind>
-      <SourceTextLength>73</SourceTextLength>
-    </routine>
-    <table id="358" parent="339" name="accounts">
+    <table id="367" parent="333" name="orders">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <argument id="359" parent="344" name="nameNew">
+    <table id="368" parent="333" name="product">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="369" parent="333" name="student">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <argument id="370" parent="344" name="user">
       <DataType>varchar(255)|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="360" parent="344" name="ageNew">
-      <DataType>int(11)|0s</DataType>
-      <Position>2</Position>
-    </argument>
-    <argument id="361" parent="344" name="genNew">
-      <DataType>bit(1)|0s</DataType>
-      <Position>3</Position>
-    </argument>
-    <argument id="362" parent="344" name="addressNew">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>4</Position>
-    </argument>
-    <argument id="363" parent="345" name="idDel">
-      <DataType>int(11)|0s</DataType>
-      <Position>1</Position>
-    </argument>
-    <argument id="364" parent="346" name="idSearch">
-      <DataType>int(11)|0s</DataType>
-      <Position>1</Position>
-    </argument>
-    <argument id="365" parent="347" name="user">
+    <argument id="371" parent="345" name="user">
       <DataType>varchar(255)|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="366" parent="349" name="user">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>1</Position>
-    </argument>
-    <argument id="367" parent="349" name="pass">
+    <argument id="372" parent="345" name="pass">
       <DataType>varchar(100)|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="368" parent="350" name="user">
+    <argument id="373" parent="346" name="user">
       <DataType>varchar(255)|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="369" parent="350" name="pass">
+    <argument id="374" parent="346" name="pass">
       <DataType>varchar(100)|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="370" parent="351" name="nameSearch">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>1</Position>
-    </argument>
-    <argument id="371" parent="352" name="idUp">
-      <DataType>int(11)|0s</DataType>
-      <Position>1</Position>
-    </argument>
-    <argument id="372" parent="352" name="nameUp">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>2</Position>
-    </argument>
-    <argument id="373" parent="352" name="ageUp">
-      <DataType>int(11)|0s</DataType>
-      <Position>3</Position>
-    </argument>
-    <argument id="374" parent="352" name="genUp">
-      <DataType>bit(1)|0s</DataType>
-      <Position>4</Position>
-    </argument>
-    <argument id="375" parent="352" name="addressUp">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>5</Position>
-    </argument>
-    <column id="376" parent="353" name="id">
+    <column id="375" parent="347" name="id">
       <AutoIncrement>3</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="377" parent="353" name="username">
+    <column id="376" parent="347" name="username">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="378" parent="353" name="password">
+    <column id="377" parent="347" name="password">
       <DataType>varchar(100)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="379" parent="353" name="role">
+    <column id="378" parent="347" name="role">
       <DataType>tinyint(4)|0s</DataType>
       <DefaultExpression>0</DefaultExpression>
       <Position>4</Position>
     </column>
-    <index id="380" parent="353" name="PRIMARY">
+    <index id="379" parent="347" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="381" parent="353" name="username">
+    <index id="380" parent="347" name="username">
       <ColNames>username</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="382" parent="353" name="PRIMARY">
+    <key id="381" parent="347" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="383" parent="353" name="username">
+    <key id="382" parent="347" name="username">
       <UnderlyingIndexName>username</UnderlyingIndexName>
     </key>
-    <column id="384" parent="354" name="id">
-      <AutoIncrement>18</AutoIncrement>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
+    <argument id="383" parent="348" name="nameNew">
+      <DataType>varchar(255)|0s</DataType>
       <Position>1</Position>
-    </column>
-    <column id="385" parent="354" name="name">
+    </argument>
+    <argument id="384" parent="348" name="ageNew">
+      <DataType>int(11)|0s</DataType>
+      <Position>2</Position>
+    </argument>
+    <argument id="385" parent="348" name="genNew">
+      <DataType>bit(1)|0s</DataType>
+      <Position>3</Position>
+    </argument>
+    <argument id="386" parent="348" name="addressNew">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>4</Position>
+    </argument>
+    <argument id="387" parent="349" name="idUp">
+      <DataType>int(11)|0s</DataType>
+      <Position>1</Position>
+    </argument>
+    <argument id="388" parent="349" name="quantityUp">
+      <DataType>int(11)|0s</DataType>
+      <Position>2</Position>
+    </argument>
+    <argument id="389" parent="350" name="orderId">
+      <DataType>int(11)|0s</DataType>
+      <Position>1</Position>
+    </argument>
+    <argument id="390" parent="351" name="userId">
+      <DataType>int(11)|0s</DataType>
+      <Position>1</Position>
+    </argument>
+    <argument id="391" parent="351" name="totalP">
+      <DataType>float|0s</DataType>
+      <Position>2</Position>
+    </argument>
+    <argument id="392" parent="351" name="addressP">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>3</Position>
+    </argument>
+    <argument id="393" parent="351" name="phoneP">
+      <DataType>varchar(11)|0s</DataType>
+      <Position>4</Position>
+    </argument>
+    <argument id="394" parent="352" name="orderId">
+      <DataType>int(11)|0s</DataType>
+      <Position>1</Position>
+    </argument>
+    <argument id="395" parent="352" name="productId">
+      <DataType>int(11)|0s</DataType>
+      <Position>2</Position>
+    </argument>
+    <argument id="396" parent="352" name="productPrice">
+      <DataType>float|0s</DataType>
+      <Position>3</Position>
+    </argument>
+    <argument id="397" parent="352" name="productQuantity">
+      <DataType>int(11)|0s</DataType>
+      <Position>4</Position>
+    </argument>
+    <argument id="398" parent="353" name="idDel">
+      <DataType>int(11)|0s</DataType>
+      <Position>1</Position>
+    </argument>
+    <argument id="399" parent="354" name="orderDetailId">
+      <DataType>int(11)|0s</DataType>
+      <Position>1</Position>
+    </argument>
+    <argument id="400" parent="355" name="idSearch">
+      <DataType>int(11)|0s</DataType>
+      <Position>1</Position>
+    </argument>
+    <argument id="401" parent="356" name="user">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>1</Position>
+    </argument>
+    <argument id="402" parent="358" name="orderId">
+      <DataType>int(11)|0s</DataType>
+      <Position>1</Position>
+    </argument>
+    <argument id="403" parent="359" name="proId">
+      <DataType>int(11)|0s</DataType>
+      <Position>1</Position>
+    </argument>
+    <argument id="404" parent="361" name="user">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>1</Position>
+    </argument>
+    <argument id="405" parent="361" name="pass">
+      <DataType>varchar(100)|0s</DataType>
+      <Position>2</Position>
+    </argument>
+    <argument id="406" parent="362" name="user">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>1</Position>
+    </argument>
+    <argument id="407" parent="362" name="pass">
+      <DataType>varchar(100)|0s</DataType>
+      <Position>2</Position>
+    </argument>
+    <argument id="408" parent="363" name="nameSearch">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>1</Position>
+    </argument>
+    <argument id="409" parent="364" name="idUp">
+      <DataType>int(11)|0s</DataType>
+      <Position>1</Position>
+    </argument>
+    <argument id="410" parent="364" name="nameUp">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
-    </column>
-    <column id="386" parent="354" name="age">
+    </argument>
+    <argument id="411" parent="364" name="ageUp">
       <DataType>int(11)|0s</DataType>
       <Position>3</Position>
-    </column>
-    <column id="387" parent="354" name="gen">
+    </argument>
+    <argument id="412" parent="364" name="genUp">
       <DataType>bit(1)|0s</DataType>
       <Position>4</Position>
-    </column>
-    <column id="388" parent="354" name="address">
+    </argument>
+    <argument id="413" parent="364" name="addressUp">
       <DataType>varchar(255)|0s</DataType>
       <Position>5</Position>
-    </column>
-    <index id="389" parent="354" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="390" parent="354" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <argument id="391" parent="355" name="user">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>1</Position>
     </argument>
-    <argument id="392" parent="356" name="user">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>1</Position>
-    </argument>
-    <argument id="393" parent="356" name="pass">
-      <DataType>varchar(100)|0s</DataType>
-      <Position>2</Position>
-    </argument>
-    <argument id="394" parent="357" name="user">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>1</Position>
-    </argument>
-    <argument id="395" parent="357" name="pass">
-      <DataType>varchar(100)|0s</DataType>
-      <Position>2</Position>
-    </argument>
-    <column id="396" parent="358" name="id">
+    <column id="414" parent="365" name="id">
       <AutoIncrement>3</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="397" parent="358" name="username">
+    <column id="415" parent="365" name="username">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="398" parent="358" name="password">
+    <column id="416" parent="365" name="password">
       <DataType>varchar(100)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="399" parent="358" name="role">
+    <column id="417" parent="365" name="role">
       <DataType>tinyint(4)|0s</DataType>
       <DefaultExpression>0</DefaultExpression>
       <Position>4</Position>
     </column>
-    <index id="400" parent="358" name="PRIMARY">
+    <index id="418" parent="365" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="401" parent="358" name="username">
+    <index id="419" parent="365" name="username">
       <ColNames>username</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="402" parent="358" name="PRIMARY">
+    <key id="420" parent="365" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="403" parent="358" name="username">
+    <key id="421" parent="365" name="username">
       <UnderlyingIndexName>username</UnderlyingIndexName>
+    </key>
+    <column id="422" parent="366" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="423" parent="366" name="order_id">
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="424" parent="366" name="product_id">
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="425" parent="366" name="product_price">
+      <DataType>float|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="426" parent="366" name="quantity">
+      <DataType>int(11)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <index id="427" parent="366" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="428" parent="366" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="429" parent="367" name="orderId">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="430" parent="367" name="user_id">
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="431" parent="367" name="total">
+      <DataType>float|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="432" parent="367" name="createdDate">
+      <DataType>date|0s</DataType>
+      <DefaultExpression>current_timestamp()</DefaultExpression>
+      <Position>4</Position>
+    </column>
+    <column id="433" parent="367" name="type">
+      <DataType>bit(1)|0s</DataType>
+      <DefaultExpression>b&apos;1&apos;</DefaultExpression>
+      <Position>5</Position>
+    </column>
+    <column id="434" parent="367" name="status">
+      <DataType>tinyint(4)|0s</DataType>
+      <DefaultExpression>1</DefaultExpression>
+      <Position>6</Position>
+    </column>
+    <column id="435" parent="367" name="phone">
+      <DataType>varchar(11)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="436" parent="367" name="address">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <foreign-key id="437" parent="367" name="orders_ibfk_1">
+      <ColNames>user_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>accounts</RefTableName>
+    </foreign-key>
+    <index id="438" parent="367" name="PRIMARY">
+      <ColNames>orderId</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="439" parent="367" name="user_id">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="440" parent="367" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="441" parent="368" name="id">
+      <AutoIncrement>7</AutoIncrement>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="442" parent="368" name="name">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="443" parent="368" name="image_url">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="444" parent="368" name="price">
+      <DataType>float|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="445" parent="368" name="quantity">
+      <DataType>int(11)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="446" parent="368" name="description">
+      <DataType>text|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="447" parent="368" name="status">
+      <DataType>bit(1)|0s</DataType>
+      <DefaultExpression>b&apos;1&apos;</DefaultExpression>
+      <Position>7</Position>
+    </column>
+    <index id="448" parent="368" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="449" parent="368" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="450" parent="369" name="id">
+      <AutoIncrement>4</AutoIncrement>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="451" parent="369" name="name">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="452" parent="369" name="age">
+      <DataType>int(11)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="453" parent="369" name="gen">
+      <DataType>bit(1)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="454" parent="369" name="address">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <index id="455" parent="369" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="456" parent="369" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

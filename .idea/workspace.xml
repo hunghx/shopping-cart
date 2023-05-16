@@ -5,23 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10fa6a8b-d350-44c5-82c1-ac0074a4ab6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ra/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ra/model/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ra/model/service/user/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ra/model/service/user/UserServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/form-login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/form-register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ra/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ra/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ra/model/entity/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ra/model/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ra/model/entity/UserLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ra/model/service/cart/CartServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ra/model/service/cart/ICartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ra/model/service/product/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ra/model/service/product/ProductServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___com_example___DemoAnotation_SpringMVC_1_0_SNAPSHOT_war__exploded_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___com_example___DemoAnotation_SpringMVC_1_0_SNAPSHOT_war__exploded_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/b524ca5a-8cdc-4fc4-9894-08e2758d56bb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b524ca5a-8cdc-4fc4-9894-08e2758d56bb.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/b524ca5a-8cdc-4fc4-9894-08e2758d56bb/storage_v2/_src_/schema/qlsv.vgE1AA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b524ca5a-8cdc-4fc4-9894-08e2758d56bb/storage_v2/_src_/schema/qlsv.vgE1AA.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ra/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ra/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ra/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ra/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ra/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ra/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ra/model/service/user/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ra/model/service/user/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ra/model/service/user/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ra/model/service/user/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/form-login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/form-login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/shop.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +188,10 @@
       <workItem from="1683687163787" duration="7000" />
       <workItem from="1683687199055" duration="2509000" />
       <workItem from="1683692372986" duration="5177000" />
-      <workItem from="1683708703413" duration="3289000" />
+      <workItem from="1683708703413" duration="4836000" />
+      <workItem from="1683766598191" duration="4175000" />
+      <workItem from="1684195336882" duration="294000" />
+      <workItem from="1684195652036" duration="22775000" />
     </task>
     <servers />
   </component>
@@ -198,5 +208,26 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ra/model/service/user/UserServiceImp.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ra/controller/CartController.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ra/model/service/product/ProductServiceImp.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

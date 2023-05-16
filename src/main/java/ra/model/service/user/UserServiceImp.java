@@ -1,6 +1,7 @@
 package ra.model.service.user;
 
 import ra.model.entity.User;
+import ra.model.entity.UserLogin;
 import ra.model.util.ConnectionToDB;
 
 import java.sql.CallableStatement;
@@ -52,8 +53,8 @@ public class UserServiceImp implements IUserService{
     }
 
     @Override
-    public User login(User user) {
-        User userLogin= null;
+    public UserLogin login(User user) {
+        UserLogin userLogin= null;
         Connection conn = null;
         try {
             conn= ConnectionToDB.getConnection();
@@ -62,11 +63,12 @@ public class UserServiceImp implements IUserService{
             callSt.setString(2, user.getPassword());
             ResultSet rs = callSt.executeQuery();
             while (rs.next()) {
-                userLogin= new User();
+                userLogin= new UserLogin();
                 userLogin.setId(rs.getInt(1));
                 userLogin.setUsername(rs.getString(2));
                 userLogin.setPassword(rs.getString(3));
                 userLogin.setRole(rs.getInt(4));
+                userLogin.setCartId(rs.getInt(5));
             }
         }catch (Exception e) {
             e.printStackTrace();

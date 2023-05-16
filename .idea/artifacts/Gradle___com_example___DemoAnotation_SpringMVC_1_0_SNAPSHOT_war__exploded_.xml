@@ -30,6 +30,7 @@
           <element id="library" level="project" name="Gradle: org.springframework:spring-expression:5.3.20" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-core:5.3.20" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-jcl:5.3.20" />
+          <element id="library" level="project" name="Gradle: taglibs:standard:1.1.2" />
         </element>
       </element>
     </root>
