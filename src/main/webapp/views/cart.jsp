@@ -31,9 +31,9 @@
   </thead>
   <tbody>
   <c:forEach items="${listcart}" var="cart">
-    <form action="/cartController/update}" method="get">
+    <form action="/cartController/update" method="get">
     <tr>
-      <input type="hidden" name="odId"/>
+      <input type="hidden" name="odId" value="${cart.id}"/>
       <td>${loop.count}</td>
       <td>${cart.productName}</td>
       <td><img src="${cart.imageUrl}" alt="${cart.productName}" width="100px"></td>
@@ -41,7 +41,7 @@
       <td><input type="number" name="quantity" value="${cart.quantity}"></td>
       <td>${cart.price* cart.quantity}</td>
       <td><button type="submit" class="btn btn-warning">Update</button></td>
-      <td><button class="btn btn-danger">Delete</button></td>
+      <td><a class="btn btn-danger" href="/cartController/delete/${cart.id}">Delete</a></td>
     </tr>
     </form>
   </c:forEach>

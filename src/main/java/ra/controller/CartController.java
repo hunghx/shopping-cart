@@ -5,6 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import ra.model.entity.OrderDetail;
 import ra.model.entity.Product;
 import ra.model.entity.UserLogin;
@@ -44,5 +45,18 @@ public class CartController {
         }
             return "redirect:/cartController/";
 
+    }
+    @GetMapping("/update")
+    public String update(@RequestParam("odId") String id,@RequestParam("quantity") String quantity){
+        OrderDetail orderDetail = new OrderDetail();
+        orderDetail.setId(Integer.parseInt(id));
+        orderDetail.setQuantity(Integer.parseInt(quantity));
+        cartService.update(orderDetail);
+        return "redirect:/cartController";
+    }
+    @GetMapping("/delete/{idDel}")
+    public String delete(@PathVariable("idDel") String idDel){
+        cartService.delete(Integer.valueOf(idDel));
+        return "redirect:/cartController";
     }
 }
